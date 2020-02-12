@@ -39,11 +39,7 @@
 
 	<script>
 		$(document).ready(function() {
-        	$('#animate').fadeIn(3000).animate({}, 5000, function() {
-                console.log("animate works");
-                //this function is called immediately after page loading, 
-                //not 5 s after fade in as intended
-            });
+        	$('#animate').fadeIn(3000).delay(5000).fadeOut(3000);
         });
 	</script>
 </body>
